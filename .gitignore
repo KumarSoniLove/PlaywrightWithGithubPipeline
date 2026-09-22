@@ -1,0 +1,13 @@
+
+# Playwright
+node_modules/
+/test-results/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+example.spec.ts
+/json-test-report.json
+/junit-test-report.xml
+/allure-report
+/allure-results
+

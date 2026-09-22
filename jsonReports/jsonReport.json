@@ -1,0 +1,245 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\sonil\\PlaywrightAzureDevOpsPipeline\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--grep",
+      "PlaywrightWithAzureDevOpsPipeline"
+    ],
+    "configFile": "C:\\Users\\sonil\\PlaywrightAzureDevOpsPipeline\\playwright.config.ts",
+    "rootDir": "C:/Users/sonil/PlaywrightAzureDevOpsPipeline",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/sonil/PlaywrightAzureDevOpsPipeline/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/sonil/PlaywrightAzureDevOpsPipeline",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "dot",
+        null
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "playwright-report/junitReport.xml"
+        }
+      ],
+      [
+        "C:\\Users\\sonil\\PlaywrightAzureDevOpsPipeline\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "outputFolder": "allure-results"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 11,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\01_POST_API_REQUEST_Static.spec.ts",
+      "file": "tests/01_POST_API_REQUEST_Static.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Create POST API request using static file in playwright & typescript",
+          "ok": true,
+          "tags": [
+            "PlaywrightWithAzureDevOpsPipeline"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 509,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "POST API Response : {\n  \"bookingid\": 373,\n  \"booking\": {\n    \"firstname\": \"playwright typescript by testers talk\",\n    \"lastname\": \"playwright javascript by testers talk\",\n    \"totalprice\": 1000,\n    \"depositpaid\": true,\n    \"bookingdates\": {\n      \"checkin\": \"2025-01-01\",\n      \"checkout\": \"2025-01-01\"\n    },\n    \"additionalneeds\": \"breakfast\"\n  }\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-17T14:11:39.445Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed037f98851ae7ccbdd9-285362feda21a5330dc6",
+          "file": "tests/01_POST_API_REQUEST_Static.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "tests\\alerts.test.ts",
+      "file": "tests/alerts.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "confirmBox",
+          "ok": true,
+          "tags": [
+            "PlaywrightWithAzureDevOpsPipeline"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10312,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Dialog message: Press a button!\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-17T14:11:39.470Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\sonil\\PlaywrightAzureDevOpsPipeline\\test-results\\tests-alerts-confirmBox-chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "addb81fc64a6c6200bbb-69a9f31f4456f9303d4f",
+          "file": "tests/alerts.test.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "promptBox",
+          "ok": true,
+          "tags": [
+            "PlaywrightWithAzureDevOpsPipeline"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 6717,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Dialog message: Please enter your name\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-17T14:11:39.470Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\sonil\\PlaywrightAzureDevOpsPipeline\\test-results\\tests-alerts-promptBox-chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "addb81fc64a6c6200bbb-09aea57986e58cbab6c7",
+          "file": "tests/alerts.test.ts",
+          "line": 28,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-17T14:11:31.749Z",
+    "duration": 20542.384,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
